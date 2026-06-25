@@ -1,0 +1,17 @@
+{
+  "name": "My CV Map",
+  "short_name": "CV Map",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "description": "A PWA map of Vilnius showing CV details.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
