@@ -1,0 +1,32 @@
+.popup-card {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  min-width: 240px;
+}
+
+.popup-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.popup-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.88rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.popup-text {
+  margin: 12px 0 16px;
+  font-size: 0.92rem;
+  color: rgba(0, 0, 0, 0.78);
+  line-height: 1.4;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: flex-end;
+}
