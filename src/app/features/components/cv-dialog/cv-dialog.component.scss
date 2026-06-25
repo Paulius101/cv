@@ -43,24 +43,25 @@ mat-list {
 
 .cv-exp-header {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     align-items: baseline;
     font-weight: 600;
 }
 
 .cv-role {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
 }
 
 .cv-exp-date {
     font-size: 0.85rem;
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .cv-exp-desc {
     white-space: normal;
     overflow: visible;
     word-break: break-word;
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
 }
