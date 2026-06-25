@@ -4,6 +4,14 @@ import { CommonModule } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MapPopupComponent } from './map-popup.component';
 
+const leafletBaseUrl = new URL('leaflet/', document.baseURI).href;
+L.Icon.Default.imagePath = '';
+L.Icon.Default.mergeOptions({
+    iconUrl: new URL('marker-icon.png', leafletBaseUrl).href,
+    iconRetinaUrl: new URL('marker-icon-2x.png', leafletBaseUrl).href,
+    shadowUrl: new URL('marker-shadow.png', leafletBaseUrl).href,
+});
+
 @Component({
     selector: 'app-map',
     template: `<div id="map"></div>`,
@@ -11,9 +19,6 @@ import { MapPopupComponent } from './map-popup.component';
     imports: [CommonModule, MatDialogModule],
 })
 export class MapComponent implements AfterViewInit {
-    private zone = inject(NgZone);
-    private dialog = inject(MatDialog);
-
     private env = inject(EnvironmentInjector);
 
     ngAfterViewInit() {
