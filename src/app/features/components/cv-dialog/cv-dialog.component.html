@@ -1,7 +1,13 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Paulius Dambrauskas</mat-card-title>
-        <mat-card-subtitle>Frontend Developer — Vilnius, Lithuania</mat-card-subtitle>
+        <mat-card-title>
+            <mat-icon aria-hidden="true">badge</mat-icon>
+            Paulius Dambrauskas
+        </mat-card-title>
+        <mat-card-subtitle>
+            <mat-icon aria-hidden="true" class="inline-icon">work</mat-icon>
+            Frontend Developer — Medziukai, Vilniaus apskritis, Lithuania
+        </mat-card-subtitle>
     </mat-card-header>
 
     <mat-divider></mat-divider>
@@ -12,7 +18,7 @@
             <span class="contact"><mat-icon>email</mat-icon>&nbsp;p.dambrausko@gmail.com</span>
         </div>
 
-        <h4>Summary</h4>
+        <h4><mat-icon aria-hidden="true" class="section-icon">summarize</mat-icon>Summary</h4>
         <p>Frontend developer with Angular experience from versions 12 through 22, working with forms, Keycloak-based
             authentication, and UI monitoring.</p>
         <p>Worked with component libraries including PrimeNG, Angular Material, and NG Bootstrap, and used Bootstrap for
@@ -22,7 +28,7 @@
 
         <mat-divider></mat-divider>
 
-        <h4>Key Experience</h4>
+        <h4><mat-icon aria-hidden="true" class="section-icon">work_history</mat-icon>Key Experience</h4>
         <div class="cv-experience-list">
             <div class="cv-experience-item">
                 <div class="cv-exp-header"><strong>SEB</strong><span class="cv-role">— Frontend Developer</span></div>
@@ -49,7 +55,10 @@
     </mat-card-content>
 
     <mat-card-actions>
-        <a mat-button href="Paulius-Dambrauskas-CV.pdf" download target="_blank" rel="noopener">Download PDF</a>
+        <a mat-button href="Paulius-Dambrauskas-CV.pdf" download target="_blank" rel="noopener">
+            <mat-icon aria-hidden="true">download</mat-icon>
+            Download full CV PDF
+        </a>
         <span style="flex:1 1 auto"></span>
         <button mat-button color="primary" (click)="close()">Close</button>
     </mat-card-actions>

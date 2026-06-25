@@ -6,6 +6,19 @@
   min-width: 240px;
 }
 
+.popup-title,
+.popup-subtitle,
+.popup-actions button mat-icon {
+  vertical-align: middle;
+}
+
+.popup-title mat-icon,
+.popup-subtitle mat-icon,
+.popup-actions button mat-icon {
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
 .popup-title {
   margin: 0;
   font-size: 1rem;

@@ -2,6 +2,15 @@ mat-card {
     max-width: 100%;
 }
 
+mat-card-title mat-icon,
+mat-card-subtitle mat-icon,
+h4 mat-icon,
+mat-card-actions mat-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    color: #1a8fb3;
+}
+
 mat-card-content {
     max-height: calc(80vh - 140px);
     overflow: auto;
